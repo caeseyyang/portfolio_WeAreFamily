@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/people_1.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>我們這一家</title>
+</head>
+
+<body>
+    <!-- 標題 -->
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-light   fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/navlogo.png" alt="我們這一家" class="navlogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  mx-3 ">
+                        <a class="nav-link"  href="about.html">
+                            故事大綱
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown active  mx-3">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            人物介紹
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" >
+                            <a class="dropdown-item" href="people_1.html">主要人物</a>
+                            <a class="dropdown-item" href="people_2.html">周邊人物</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="other.html">其他</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="link.html">相關連結</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- banner    -->
+    <div>
+        <img src="./img/主要人物.png" id="bannerimg"></img>
+    </div>
+
+    <!-- 內文 -->
+
+    <div class="container w3-animate-left" >
+        <div class="name ">主要人物</div>
+        <div class="buttonhead" >
+            <button  class="show_1"  type="button" data-toggle="collapse" data-target="#flower_1" aria-expanded="false" aria-controls="flower_1"><img src="./img/10.png" alt=""></button>
+            <button  class="show_2"  type="button" data-toggle="collapse" data-target="#flower_2" aria-expanded="false" aria-controls="flower_2"><img src="./img/20.png" alt=""></button>
+            <button  class="show_3"  type="button" data-toggle="collapse" data-target="#flower_3" aria-expanded="false" aria-controls="flower_3"><img src="./img/30.png" alt=""></button>
+            <button  class="show_4"  type="button" data-toggle="collapse" data-target="#flower_4" aria-expanded="false" aria-controls="flower_4"><img src="./img/40.png" alt=""></button>
+        </div>
+        <br><br >
+        <br><br >
+        <!-- 花爸 -->        
+        <div id="container" >
+            <div class="collapse row btn btn-block btn-lg" id="flower_1" data-parent="#container">
+                    <img src="./img/role_father.gif" alt="">
+                    <section>
+                        <h1>花爸</h1>
+                        <p>現年約於45歲至50歲間</p>
+                        <p>身高:165公分，體重:78公斤</p>
+                        <ul>
+                            <li>對許多事情興趣缺缺，不怎麼關心，但對老婆的奇特或誇張行為卻經常抱持著看笑話態度，當作娛樂看待。</li>
+                            <li>沉默寡言、我行我素，通常對事物的各種情緒和動作反應十分平淡，行事作風有著傳統大男人風格。</li>
+                            <li>平日總忙於上班與應酬，生理時間極為固定，偶爾下班後會去居酒屋和朋友喝一杯。</li>
+                            <li>口頭禪：「哈哈哈」。</li>
+                        </ul>
+                    </section>
+                
+            </div>
+            <!-- 花媽 -->
+            <div class="collapse row btn btn-block btn-lg" id="flower_2" data-parent="#container">
+                    <img src="./img/role_mother.gif" alt="">
+                    <section>
+                        <h1>花媽</h1>
+                        <p>現年約43歳</p>
+                        <p>身高：165公分，體重：105.5公斤左右</p>
+                        <ul>
+                            <li>習慣誇大自己的情緒、講話內容和動作。</li>
+                            <li>秉持勤儉、儉樸的生活態度，對物品錙銖必較，認為名牌是虛有其表，甚至會將貴重物品放很久或過期前夕才用。</li>
+                            <li>有著不認輸的精神，對自己的外貌和所作所為往往頗具信心，凡有堅持的目標就要做到最後。</li>
+                            <li>口頭禪：「安捏喔」。</li>
+                        </ul>
+                    </section>
+            </div>
+
+            <!-- 橘子 -->
+            <div class="collapse row btn btn-block btn-lg" id="flower_3" data-parent="#container">
+                    <img src="./img/role_orange.webp" alt="">
+                    <section>
+                        <h1>花橘子</h1>
+                        <p>高中二年級學生</p>
+                        <p>身高：155公分，體重：60公斤</p>
+                        <ul>
+                            <li>因為個子矮小的關係，曾多次被人誤認為是中學生，甚至是小學生。</li>
+                            <li>個性幼稚不成熟，性格單純活潑、大而化之且冒失，無法有過於複雜的思想，時常不假思索地表達或從身體動作中透漏自己的想法，並且形容事物時習慣誇張化。</li>
+                            <li>喜歡泰迪熊，因此學校所屬社團為「泰迪熊研究社」，簡稱「熊研」。</li>
+                            <li>時常為一些小事與花媽意見有異而鬥嘴，但也常會跟花媽訴說心事或討論問題。</li>
+                        </ul>
+                    </section>
+            </div>
+
+            <!-- 柚子 -->
+            <div class="collapse row btn btn-block btn-lg" id="flower_4" data-parent="#container">
+                    <img src="./img/role_grapefruit.gif" alt="">
+                    <section>
+                        <h1>花柚子</h1>
+                        <p>中學二年級學生</p>
+                        <p>身高：155公分，體重：50公斤</p>
+                        <ul>
+                            <li>在家中行為比較正常，腦力派；很會玩填字遊戲之類，還有很會比喻。</li>
+                            <li>有著成熟思想與深奧的內心世界，表面上是話不多的人，喜歡在私底下耍酷，常為雞毛蒜皮的小事感到尷尬並逞強。</li>
+                            <li>偶像為丸野丸美，從無他人知曉，本身也非常保密，深怕被別人知道</li>
+                            <li>親眼看到花媽或橘子有他認為怪異的舉動時，暗地裡會戲謔地說「沒救了」；同時常因為媽媽或姊姊的行為和言語，及所做或討論之事感到困惑。</li>
+                        </ul>
+                    </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>內容圖片僅供專題製作發表使用，圖片版權屬於版權擁有者。</p> 
+    </footer>
+
+
+</body>
+
+</html>

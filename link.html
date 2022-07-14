@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/link.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>我們這一家</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-light   fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/navlogo.png" alt="我們這一家" class="navlogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item  mx-3 ">
+                        <a class="nav-link" href="about.html">
+                            故事大綱
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown   mx-3">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            人物介紹
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" id="drop">
+                            <a class="dropdown-item" href="people_1.html">主要人物</a>
+                            <a class="dropdown-item" href="people_2.html">周邊人物</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-3 ">
+                        <a class="nav-link" href="other.html">其他</a>
+                    </li>
+                    <li class="nav-item mx-3 active">
+                        <a class="nav-link" href="link.html">相關連結</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- goheadButton -->
+    <div class="goUp">
+        <button onclick="topFunction()" id="gotop"><img src="./img/button.png" class="goheadButtonimg"></button>
+    </div>
+
+    <!-- banner -->
+    <div>
+        <img src="./img//相關連結.png" id="bannerimg"></img>
+    </div>
+    <!-- 內容 -->
+    <div class="container w3-animate-bottom" style="animation-duration: 2s;">
+        <section>
+            <h1 class="content" style="margin-top: 30px;">我們這一家片頭曲</h1>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315"
+                    src="https://www.youtube.com/embed/p_KMfURy3YM" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h1 class="content">我們這一家片尾曲</h1>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315"
+                    src="https://www.youtube.com/embed/DFOURdR3V1Q" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section>
+            <h1 class="content">我們這一家馬拉松影集</h1>
+            <a role="button" class="btn btn-light"
+                href="https://www.youtube.com/playlist?list=PLDfDiflGwSuV6XRSJ0z7HbT4WSNDR7j_i">
+                <span>我們這一家全集馬拉松 <br> (木棉花-闔家歡YOUTUBE頻道) </span>
+            </a>
+        </section>
+    </div>
+    <footer>
+        <p>內容圖片僅供專題製作發表使用，圖片版權屬於版權擁有者。</p> 
+    </footer>
+    <!-- scroll -->
+    <script>
+        var gotopbtn = document.getElementById("gotop");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                gotopbtn.style.display = "block";
+            } else {
+                gotopbtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+/* 共用 */
+body{
+    font-family:  Arial, Helvetica, sans-serif ;
+    background-image: url(../img/bg2.png);
+    background-color: rgb(232, 235, 238);    
+}
+nav a img {
+    margin: 0 120px;
+}
+.navbar-nav {
+    font-size: 25px;
+    font-weight: bold;
+}
+nav{
+    background-color:rgb(255, 255, 255);
+}
+footer{
+    left: o;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    min-height: 50px;
+    margin-top: 260px;
+}
+.TextinFooter{
+    text-align: center;
+    padding: 10px;
+}
+.dropdown-menu{
+    border-style: ridge;
+    font-size: 18px;
+    background-color: lightgrey;
+}
+.dropdown-item{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+}
+#bannerimg {
+    margin-top: 70px;
+    width: 100%;
+    height: 250px;
+    animation: banner linear 1s 1;
+}
+@keyframes banner{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/* scroll */
+.goheadButtonimg {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    animation: shine 5s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+#gotop {
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navlogo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* 獨家 */
+.container{
+    background-color: rgba(232, 235, 238, 0.884);
+    background-color: rgba(255, 255, 255, 0.884);
+    margin-top: 50px;
+    /* border-radius: 35px; */
+}
+.frontimg{
+    height: 650px;
+    width: 100%;
+}
+.frontimg2{
+    height: 1400px;
+    width: 100%;
+}
+section{
+    margin: 0 15% 100px;
+}  
+.flip-card {
+    background-color: transparent;
+    height:650px;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+.flip-card_2 {
+    background-color: transparent;
+    height:1400px;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card_2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front,.flip-card-back,.flip-card-back_2, .flip-card-back_3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 35px;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: rgb(173, 139, 192);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 30px;
+}
+.flip-card-back_2 {
+    background-color: rgb(221, 108, 161);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 30px;
+}
+.flip-card-back_3{
+    background-color: rgb(115, 189, 65);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+.text{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+p, .text li{
+    margin-bottom: 30px;
+}
+.mother::before{
+    content: url(../img/new_role_mother.png);
+    width: auto;
+    height: auto;
+}
+.orange::before{
+    content: url(../img/role_orange1.png);
+    width: auto;
+    height: auto;
+}
+.grapefruit::before{
+    content: url(../img/role_grapefruit1.png);
+    width: auto;
+    height: auto;
+}
+p, .p2{
+    font-size: 40px; 
+    position: relative; 
+    left: 80px;
+}
+.title_1, .title_2, .title_3{
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 30px;
+}
+.title_1{
+    color: rgb(185, 101, 218);
+    margin-top: 50px;
+}
+.title_2{
+    color: rgb(221, 86, 169);
+}
+.title_3{
+    color: rgb(112, 202, 52);
+
+}
+
+
+/* rwd */
+@media  screen and (max-width: 1200px) {
+    .title_1, .title_2, .title_3{
+        font-size: 60px;
+    }
+    p, .p2{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 28px;
+    }
+    section{
+        margin: -10px;
+    }
+    .goUp{
+        display: none;
+    }
+    .flip-card-back, .flip-card-back_2, .flip-card-back{
+        padding: 0;
+    }
+
+  }
+
+
+@media  screen and (max-width: 992px) {
+    .title_1, .title_2, .title_3{
+        font-size: 60px;
+    }
+    p, .p2{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .goUp{
+        display: none;
+    }
+    .flip-card-back, .flip-card-back_2, .flip-card-back{
+        padding: 0;
+    }
+
+  }
+
+
+@media  screen and (max-width: 768px) {
+    .title_1, .title_2, .title_3{
+        font-size: 40px;
+    }
+    p, .p2{
+        font-size: 26px;
+    }
+    .text{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    p, .text li{
+        margin-bottom: 20px;
+    }
+    .goUp{
+        display: none;
+    }
+    .flip-card-back, .flip-card-back_2, .flip-card-back{
+        padding: 0;
+    }
+
+  }
+
+
+@media  screen and (max-width: 576px) {
+    .title_1, .title_2, .title_3{
+        font-size: 40px;
+    }
+    p, .p2{
+        font-size: 26px;
+    }
+    .text{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    p, .text li{
+        margin-bottom: 15px;
+    }
+    .goUp{
+        display: none;
+    }
+    .flip-card-back, .flip-card-back_2, .flip-card-back{
+        padding: 0;
+    }
+  }
+  
