@@ -1,80 +1,8 @@
-/* 共用 */
-body{
-    font-family:  Arial, Helvetica, sans-serif ;
-    background-image: url(../img/bg2.png);
-    background-color: rgb(232, 235, 238);    
-}
-nav a img {
-    margin: 0 120px;
-
-}
-.navbar-nav {
-    font-size: 25px;
-    font-weight: bold;
-}
-nav{
-    background-color:rgb(255, 255, 255);
-
-}
 footer{
-    left: o;
-    bottom: 0;
-    width: 100%;
-    background-color: whitesmoke;
-    min-height: 50px;
     margin-top: 350px;
 }
-footer p{
-    text-align: center;
-    padding: 10px;
-}
-.dropdown-menu{
-    border-style: ridge;
-    font-size: 18px;
-    background-color: lightgrey;
-
-}
-.dropdown-item{
-    background-color: lightgrey;
-    color: black;
-    font-weight: bold;
-}
-
-#bannerimg {
-    width: 100%;
-    margin-top: 70px;
-    height: 250px;
-    animation: banner linear 1s 1;
-}
-@keyframes banner{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-.navlogo:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-
-/* 獨用 */
 .container{
-    /* background-color: rgba(232, 235, 238, 0.884); */
     background-color: rgba(255, 255, 255, 0.884);
-    /* border-radius: 35px; */
     padding: 40px;
     margin-top: 50px;
 }
@@ -109,12 +37,20 @@ section h3::before{
     font-size: 60px ;
     margin: 10px 0 30px;
     text-shadow: 2px 2px 4px ;
-    /* text-shadow: 2px 2px 2px rgb(184, 181, 181);
-    color: rgb(110, 107, 107); */
     border-bottom: rgb(110, 107, 107) dashed 2px;
 }
 #h3pic::before{
     content: url(../img/titlecut.png);
+}
+
+#carouselExampleIndicators {
+    height: 615px;
+    border: #ffe993 solid 10px;
+    border-radius: 15px;
+}
+
+.w3-animate-left {
+    animation-duration: 1s;
 }
 
 /* rwd */
@@ -126,3 +62,5 @@ section h3::before{
         font-size: 30px;
     }
 }
+
+
